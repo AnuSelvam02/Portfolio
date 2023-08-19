@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600&family=Great+Vibes&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital@1&family=Pacifico&family=Roboto:ital,wght@0,100;1,500&family=Satisfy&family=Tangerine:wght@700&display=swap');
+
+        * {
+            margin: 0;
+        }
+
+        .nav-logo img {
+            border-radius: 50%;
+            border: solid;
+            width: 70%;
+            height: 200px;
+            margin: 50px 30px;
+        }
+
+        aside {
+            height: 100vh;
+            width: 250px;
+           /* background-image: linear-gradient(to bottom,white 300px 500px,blue);*/
+           background-image: url("asd.jpg");
+           background-position:initial;
+           background-repeat: no-repeat;
+           background-size: cover;
+            position: fixed;
+        }
+
+        aside li {
+            list-style-type: none;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            font-size: 25px;
+            line-height: 50px;
+            color:rgb(1, 6, 16);
+            font-family:'Times New Roman', Times, serif;
+            font-weight: 1000;
+        }
+
+        .nav-items a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .nav-logo img:hover {
+            border: 4px white solid;
+        }
+
+        .nav-items ul {
+            padding-top: 0px;
+        }
+
+        .content {
+            
+            margin-left: 250px;
+            height: 800px;
+            width: 82%;
+            /* background-color: rgb(119, 248, 244); */
+        }
+
+        /* .main {
+            display: flex;
+        } */
+
+        .about {
+            
+            padding-left: 20px;
+            width:100%;
+            /* position: fixed; */
+            background-image: url("asd.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -100px;
+        }
+
+        .about-content {
+            /*padding-top: -1650px;*/ 
+            height: 800px;
+            justify-content: space-between;
+            width: 93%;
+            /* backdrop-filter: blur(1px); */
+            background: rgba(153, 152, 152, 0);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 50px;
+        }
+
+        .about-content p {
+            /* align-items: center; */
+            /* text-align: justify; */
+            padding-top: 50px;
+            padding-right: 40px;
+            font-size: 20px;
+            color: black;
+            font-family:'Times New Roman', Times, serif;
+            padding-bottom: 200px;
+
+
+        }
+
+        .about-content h1 {
+            font-size: 60px;
+            /* font-family: 'Crimson Text', serif; */
+            font-weight: 300;
+            font-family: 'Lobster Two', cursive;
+            color: orangered;  
+            
+
+        }
+
+        /* .about-content h1 span{
+            color: tomato;
+        } */
+        .qual {
+            height: 100vh;
+            width: 100%;
+            background-image: url("asd.jpg");
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -100px;
+
+        }
+
+        .qual-text {
+            padding-top: 100px;
+            height: 50vh;
+            width: 1000px;
+            font-size: 25px;
+            align-items: center;
+            font-family:'Times New Roman', Times, serif;
+
+
+
+        }
+
+        .skill {
+            height: 100vh;
+            width: 100%;
+            background-image: url("asd.jpg");
+
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -100px;
+
+        }
+
+        .skill-text {
+            padding-top: 100px;
+            height: 50vh;
+            width: 1000px;
+            font-size: 25px;
+            align-items: center;
+            font-family:'Times New Roman', Times, serif;
+
+
+
+        }
+
+        .project {
+            height: 100vh;
+            width: 100%;
+            background-image: url("asd.jpg");
+
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -100px;
+        }
+
+        .project-text {
+            padding-top: 100px;
+            height: 50vh;
+            width: 1000px;
+            font-size: 25px;
+            align-items: center;
+            font-family:'Times New Roman', Times, serif;
+
+
+
+        }
+
+        .internship {
+            height: 100vh;
+            width: 100%;
+            background-image: url("asd.jpg");
+
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -100px;
+        }
+
+        .internship-text {
+            padding-top: 100px;
+            /* height: 50vh; */
+            width: 1100px;
+            font-size: 25px;
+            align-items: center;
+            font-family:'Times New Roman', Times, serif;
+
+
+
+        }
+
+        .contact {
+            height: 100vh;
+            width: 100%;
+            background-image: url("asd.jpg");
+
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -100px;
+        }
+
+        .contact-text {
+            padding-top: 100px;
+            height: 50vh;
+            width: 1000px;
+            font-size: 25px;
+            align-items: center;
+            font-family:'Times New Roman', Times, serif;
+
+
+        }
+        .certifiate{
+            height: 100vh;
+            width: 100%;
+            background-image: url("asd.jpg");
+
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -100px;
+        }
+        .cert-text {
+            padding-top: 100px;
+            height: 50vh;
+            width: 1000px;
+            font-size: 25px;
+            align-items: center;
+            font-family:'Times New Roman', Times, serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <aside>
+            <div class="nav-logo">
+                <img src="img.jpg" alt="">
+            </div>
+
+            <div class="nav-items">
+                <ul>
+                    <li><a href="#ab">About me</a>
+                    <li><a href="#qua">Qualification</a>
+                    <li><a href="#sk">Skill</a>
+                    <li><a href="#pro">Projects</a>
+                    <li><a href="#in">Internship</a>
+                    <li><a href="#cer">Certifications</a></li>
+                    <li><a href="#con">Contact</a>
+                </ul>
+
+            </div>
+        </aside>
+        <!-- navigatio bar ends -->
+        <!-- content starts -->
+
+        <div class="content">
+
+            <!-- about me starts -->
+            <div class="about" id="ab">
+                <div class="about-content">
+                    <h1>Anusha <span> S </span></h1>
+                    <p> A graduate who is passionate about learning and seeking opportunities to expand my knowledge and
+                        leverage my learning in the field of work and want to build a valuable skill set.
+                        Passionate about implementing and launching new projects.
+                        Completed PYTHON FULL STACK DEVELOPMENT course in PYSPIDER.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <!-- about me ends -->
+            <div class="qual" id="qua">
+                <div class="qual-text">
+                    <ul style="list-style-type: disc;">
+                        <li> <b>QUALIFICATION :- </b></li>
+                        <ul>
+                            <li> Bachelor of Engineering (2018 - 2022) : </li>
+                            <ul>
+                                <li> Thanthai Periyar Government Institute of Technology affiliated to Anna University
+                                </li>
+                                <ul>
+                                <li>CGPA : 7.56/10</li>
+                                <li>Department : Electrical and Electronics Engineering</li></ul>
+                        </ul>
+                        <ul>
+                            <li> Higher secondary (2017 - 2018) : </li>
+
+                                <ul>
+                                    <li>80.41%</li>
+                                    <li>Dhivya Matric Higher Secondary School</li>
+                                </ul>
+                        </ul>
+
+                            <ul>
+                                <li>High school (2015 - 2016) :</li>
+
+                                <ul>
+                                    <li>93.04% </li>
+                                    <li> Dhivya High School</li>
+                                </ul>
+                            </ul>
+
+                        </ul>
+                </div>
+            </div>
+
+            <div class="skill" id="sk">
+                <div class="skill-text">
+                    <ul style="list-style-type: circle;">
+                        <li><b>SKILLS : </b></li>
+                        <ul>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Java Script</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project" id="pro">
+                <div class="project-text">
+                    <ul>
+                        <li><b>PROJECT WORK </b></li>
+
+                        <ul style="list-style-type: circle;">
+                            <li>Main project (2022)</li>
+
+                            <ul>
+                                <li>LIFI Technology based load control system</li>
+
+                                <ul>
+                                    <li>Developed a smart communication using visible lights.</li>
+                                    <li>It provides high data transmission up to 10Gbps can be achieved.</li>
+                                </ul>
+                            </ul>
+                        </ul>
+
+                        <ul style="list-style-type: circle;">
+                            <li>Mini project (2021) </li>
+                            <ul>
+                                <li>Designed Android Application</li>
+                                <ul>
+                                    <li>Android application for calculating string efficiency and voltage distribution
+                                        of
+                                        suspension insulator of over head line.</li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="internship" id="in">
+                <div class="internship-text">
+                    <ul>
+                        <li> <b> INTERNSHIP </b></li>
+                        <ul>
+                            <li>Electrical intern (20.07.20 - 24.07.20) </li>
+                            <ul>
+                                <li>Bharat sanchar nigam Limited</li>
+                                <ul>
+                                    <li>Transmission line power calculation solar power generation implementation etc,
+                                        related with electrical domain were learned.
+                                    </li>
+                                </ul>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>
+                                Python intern (15.06.22 - 15.08.22)</li>
+                            <ul>
+                                <li>Shiash Info Solutions Pvt.Ltd </li>
+                                <ul>
+                                    <li>Related with Python and basics of oops concepts and web development were
+                                        learned.
+                                    </li>
+                                </ul>
+                            </ul>
+                        </ul>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="certifiate" id="cer">
+                <div class="cert-text">
+                    <ul>
+                        <li><b>CERTIFICATIONS :</b></li>
+                        <ul>
+                            <li>Python Full Stack Development certification from PYSPIDERS.</li>
+                        </ul>
+                        <ul>
+                            <li>Certificate of Electrical commercial RAC foundation from SIEMENS. </li>
+                        </ul>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="contact" id="con">
+                <div class="contact-text">
+                    <ul>
+                        <li><b>CONTACT</b></li>
+
+                        <ul>
+                            <li>Phone Number :</li>
+                            <ul>
+                                <li>+91 9344173044</li>
+
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Email id :</li>
+                            <ul>
+                                <li>anusha222001@gmail.com</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Linked in :</li>
+                            <ul>
+                                <li>https://www.linkedin.com/in/anusha-s-baa081232/</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Github :</li>
+                            <ul>
+                                <li>https://github.com/AnuSelvam02</li>
+                            </ul>
+                        </ul>
+
+
+                    </ul>
+                </div>
+
+            </div>
+            
+
+
+
+
+        </div>
+        <!-- content ends -->
+
+    </div>
+</body>
+
+</html>
